@@ -2,6 +2,8 @@ const allButtonEls = document.querySelectorAll("button");
 
 const inputFieldEl = document.getElementById("result");
 
+console.log("Hello there, welcome to the console.")
+
 for (let i = 0; i < allButtonEls.length; i++) {
   allButtonEls[i].addEventListener("click", () => {
     const buttonValue = allButtonEls[i].textContent;
