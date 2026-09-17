@@ -59,6 +59,11 @@ button:hover {
   color: #fff;
 }
 
+.delete{
+  background-color: #ff4136;
+  color: #fff;
+}
+
 .number,
 .decimal {
   background-color: #f7ca04;

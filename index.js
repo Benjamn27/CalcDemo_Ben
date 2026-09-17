@@ -13,7 +13,9 @@ for (let i = 0; i < allButtonEls.length; i++) {
       bigBrainResult();
     } else if (buttonValue === "27"){
       myFavoriteNumber();
-    }else {
+    } else if(buttonValue === "Del"){
+      deleteTime();
+    } else {
       appendValue(buttonValue);
     }
   });
@@ -33,4 +35,10 @@ function appendValue(buttonValue) {
 
 function myFavoriteNumber(){
   inputFieldEl.value = "27 in my favorite number, that is the only purpose for this button"
+  console.log("I really like the number 27")
+}
+
+function deleteTime(){
+  const currentValue = inputFieldEl.value + ""
+  inputFieldEl.value = currentValue.substring(0, currentValue.length-1)
 }
